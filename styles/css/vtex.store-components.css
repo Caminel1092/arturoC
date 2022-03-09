@@ -1,0 +1,388 @@
+.notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.container{
+  margin-bottom: 12px;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+  height: 360px;
+}
+
+.infoCardContainer--info-card {
+  width: 95%;
+  margin: 0 ;
+  background-color: #e6f1e6;
+  margin-left: 5%;
+  height: 210px;
+}
+
+.infoCardContainer--info-card-shoes-left {
+  width: 100%;
+  margin: 0 ;
+  background-color: #e6f1e6;
+  height: 100%;
+}
+
+.infoCardContainer--info-card-shirt-right {
+  width: 100%;
+  margin: 0 ;
+  background-color: #e6f1e6;
+  height: 100%;
+}
+
+.newsletter {
+  background-color: #03054e;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 140px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .infoCardContainer--info-card-shoes {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #e6f1e6;
+    padding: 0px;
+    height: 470px;
+  }
+
+  .infoCardContainer--info-card-banner-left {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #e6f1e6;
+    padding: 0px;
+    height: 250px;
+  }
+
+  .infoCardContainer--info-card-banner-right {
+    width: 97%;
+    margin: 0 auto;
+    background-color: #e6f1e6;
+    margin-left: 3%;
+    padding: 0px;
+    height: 250px;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+
+.infoCardCallActionContainer--info-card-home {
+  visibility: hidden;
+}
+
+.infoCardCallActionContainer--info-card-shoes {
+  visibility: hidden;
+}
+
+.infoCardCallActionContainer--info-card-banner-left {
+  visibility: hidden;
+}
+
+.infoCardCallActionContainer--info-card-banner-right {
+  visibility: hidden;
+}
+
+.infoCardCallActionContainer--info-card-shoes-left {
+  visibility: hidden;
+}
+
+.infoCardCallActionContainer--info-card-shirt-right {
+  visibility: hidden;
+}
+
+.infoCardCallActionContainer--info-card {
+  visibility: hidden;
+}
+
+.logoContainer--logoFooter {
+  margin-top: 15px;
+}
+
+/*-------------------------------------*/
+/*       Color rededor de lupa        */
+/*-----------------------------------*/
+.searchBarIcon--clear-button--search {
+  background-color: white;
+}
+
+.searchBarIcon--clear-button--search :hover .searchBarIcon{
+  background-color: #efefef;
+}
+
+.searchBarIcon .pointer :hover {
+  background-color: #efefef;
+}
+
+.searchBarIcon--search :hover {
+  background-color: #efefef;
+}
+
+.searchBarIcon--clear-button :hover {
+  background-color: #efefef;
+}
+/* >>>>Cierre Color rededor de lupa*/
+
+
+.suffixWrapper {
+  background-color: #efefef;
+}
+
+.autoCompleteOuterContainer--clear-button {
+  background-color: #efefef;
+}
+
+.searchBarContainer {
+  margin-right: 100px;
+}
+
+/*-----------------------------------------------------------------------*/
+/*              Color de cuadrado que rodea la lupa                     */
+/*---------------------------------------------------------------------*/
+.autoCompleteOuterContainer--clear-button :global(.vtex-input__suffix) {
+  float: left;
+  box-shadow: none;
+  background-color: white;
+}
+
+.autoCompleteOuterContainer :hover {
+  background-color: #efefef;
+}
+
+.autoCompleteOuterContainer--clear-button :hover :global(.vtex-input__suffix) {
+  background-color: #efefef;
+}
+/* >>>>>>>>>>>>Cierre cuadrado que rodea la lupa*/
+
+.autoCompleteOuterContainer--clear-button :global(.vtex-input-prefix__group) {
+  border: none;
+  box-shadow: none;
+  background-color: #efefef;
+  height: 35px;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*                    Banner secundarios info cards                          */
+/*--------------------------------------------------------------------------*/
+.infoCardContainer--info-card-bannerI, .infoCardContainer--info-card-bannerD {
+  height: 400px;
+}
+
+.imageElement--BannerI, .imageElement--BannerD {
+  width: 100%;
+}
+/* >>>>>>>>>>>>Cierre de  Banner secundarios info cards*/
+
+
+/*-------------------------------------------*/
+/*      Posicion de icono en top-menu       */
+/*-----------------------------------------*/
+.imageElement--storePrint {
+  margin-top: 0;
+}
+/* >>>>>>>>>>>>Cierre de Posicion de icono en top-menu*/
+
+
+/*----------------------------------------------------*/
+/*               Orden de lupa y buscador            */
+/*--------------------------------------------------*/
+.autoCompleteOuterContainer :global(.vtex-input-prefix__group){
+  display: flex;
+}
+/*.vtex-input-prefix__group.flex.flex-row.items-stretch.overflow-hidden.br2.bw1.b--solid.b--muted-4.hover-b--muted-3.h-large {
+    display: flex;
+}*/
+
+.searchBarIcon :global(.vtex-input__suffix){
+  display: flex;
+  order: 1;
+}
+/*span.c-muted-2.fw5.flex.items-center.t-body.bg-base.vtex-input__suffix.br2.bl-0.br--right.pr5.pl4 {
+    display: flex;
+    order: 1;
+}*/
+
+
+/*
+input#downshift-1-input {
+    order: 2;
+}
+
+
+ >>>>>>>>>>>>Cierre de Orden de lupa y buscador*/
+
+
+ .logoLink {
+  transform: scale(1) !important;
+}
+
+.imageElement--storePrint {
+  margin-top: -3.5px;
+}
+
+
+/*Product*/
+.thumbImg {
+  border: 1px solid;
+  border-bottom: 3px solid;
+}
+.thumbImg {
+  width: 85%;
+}
+.carouselGaleryThumbs{
+  width: 30%;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+.swiperPaginationClickable{
+  display: none;
+}
+/*Colors*/
+.skuSelectorItem--rosa-lavanda {
+  background: #9b90b5;
+}
+.skuSelectorItem--azul-marino {
+  background: #08356d;
+}
+.skuSelectorItem--azul-royal {
+  background: #052446;
+}
+.skuSelectorItem--naranja-claro {
+  background: #fea827;
+}
+
+.skuSelectorSubcontainer--colores .skuSelectorName::before {
+  content:"Color disponible";
+  font-size: .875rem;
+  text-transform: uppercase;
+}
+.skuSelectorSubcontainer--colores .skuSelectorName {
+  font-size: 0;
+}
+.skuSelectorSubcontainer--talla .skuSelectorName {
+  text-transform: uppercase;
+}
+
+
+.skuSelectorSubcontainer--colores .skuSelectorItemTextValue {
+  font-size: 0;
+}
+.frameAround{
+  display: none;
+}
+.skuSelectorItem--selected{
+  border: 2px solid;
+  border-radius: 5px;
+}
+.skuSelectorInternalBox{
+  border: 1px solid #afafaf59;
+}
+.flex.flex-column.vtex-store-components-3-x-skuSelectorSubcontainer--colores.mb3.vtex-store-components-3-x-skuSelectorSubcontainer {
+  border-bottom: 1px solid #dcdcdc8a;
+  padding-bottom: 15px;
+}
+
+.flex.flex-column.vtex-store-components-3-x-skuSelectorSubcontainer--talla.mb3.vtex-store-components-3-x-skuSelectorSubcontainer {
+  border-bottom: 1px solid #dcdcdc8a;
+  padding-bottom: 15px;
+}

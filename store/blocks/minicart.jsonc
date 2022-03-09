@@ -1,0 +1,16 @@
+{
+  "add-to-cart-button": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button"
+    }
+  },
+
+  "minicart.v2": {
+    "props": {
+      "src": "https://callearturop.vteximg.com.br/arquivos/bolsa-de-la-compra.png",
+      "customPixelEventId": "add-to-cart-button"
+    },
+    "children": ["minicart-base-content"]
+  }
+}

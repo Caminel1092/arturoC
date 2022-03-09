@@ -1,0 +1,159 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#shop"
+    ]
+  },
+  "menu-item#shop": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": ""
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#institutional": {
+    "children": [
+      "image#icon-wpp",
+      "menu-item#vtex-website",
+      "image#icon-pedidos",
+      "menu-item#vtex-website2",
+      "image#icon-deseos",
+      "menu-item#vtex-website3",
+      "image#icon-contactenos",
+      "menu-item#vtex-website4",
+      "menu-item#vtex-website5"
+    ],
+    "props":{
+      "blockClass": "menupre"
+    }
+  },
+
+  "image#icon-wpp": {
+    "props": {
+      "src": "https://arturocalle.vteximg.com.br/arquivos/whatsapp.png",
+      "maxHeight": "15px",
+      "maxWidth": "15px",
+      "margin-top": "13px",
+      "blockClass": "storePrint"
+    }
+  },
+
+  "menu-item#vtex-website": {
+    "props":
+     {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "texpre",
+      "itemProps": {
+        "icon":"mpa-globe",
+        "type": "external",
+        "href": "https://web.whatsapp.com/",
+        "noFollow": false,
+        "tagTitle": "Escríbenos por vía whatsapp",
+        "text": "VENTAS WHATSAPP"
+      }
+    }
+  },
+
+  "image#icon-pedidos": {
+    "props": {
+      "src": "https://callearturop.vteximg.com.br/arquivos/usuario.png",
+      "maxHeight": "15px",
+      "maxWidth": "15px",
+      "blockClass": "storePrint"
+    }
+  },
+  "menu-item#vtex-website2": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "texpre",
+      "itemProps": {
+        "type": "external",
+        "href": "https://web.whatsapp.com/",
+        "noFollow": false,
+        "tagTitle": "Escríbenos por vía whatsapp",
+        "text": "MIS PEDIDOS"
+      }
+    }
+  },
+
+  "image#icon-deseos": {
+    "props": {
+      "src": "https://callearturop.vteximg.com.br/arquivos/me-gusta.png",
+      "maxHeight": "15px",
+      "maxWidth": "15px",
+      "blockClass": "storePrint"
+    }
+  },
+  "menu-item#vtex-website3": {
+    "props": {
+      "icon": "mpa-heart",
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "blockClass": "texpre",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://web.whatsapp.com/",
+        "noFollow": false,
+        "tagTitle": "Escríbenos por vía whatsapp",
+        "text": "LISTA DE DESEOS"
+      }
+    }
+  },
+
+  "image#icon-contactenos": {
+    "props": {
+      "src": "https://arturocalle.vteximg.com.br/arquivos/llamada-telefonica.png?v=637400196167370000",
+      "maxHeight": "15px",
+      "maxWidth": "15px",
+      "blockClass": "storePrint"
+    }
+  },
+  "menu-item#vtex-website4": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "blockClass": "texpre",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://web.whatsapp.com/",
+        "noFollow": false,
+        "tagTitle": "Escríbenos por vía whatsapp",
+        "text": "CONTÁCTENOS"
+      }
+    }
+  },
+  "menu-item#vtex-website5": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "blockClass": "texpre",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://web.whatsapp.com/",
+        "noFollow": false,
+        "tagTitle": "Escríbenos por vía whatsapp",
+        "text": "COLOMBIA"
+      }
+    }
+  }
+}
