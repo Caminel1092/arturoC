@@ -24,8 +24,8 @@
 }
 
 .brandName {
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 15px;
   color: #2E2E2E;
 }
 
@@ -39,4 +39,18 @@
 
 .image {
   border-radius: 0.25rem;
+}
+.skuSelectorContainer--vitrina {
+  margin: 0 !important;
+}
+.skuSelectorItem--selected{
+  border: 1px solid black;
+}
+.valueWrapper--vitrina {
+  font-size: 11px;
+  padding: 0 9px;
+}
+
+.skuSelectorItem {
+  height: 25px;
 }

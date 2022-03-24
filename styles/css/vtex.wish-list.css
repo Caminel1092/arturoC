@@ -1,0 +1,13 @@
+.iconSize {
+    filter: grayscale(1);
+}
+
+
+.wishlistIconContainer :global(.vtex-button) {
+    height: 100%;
+    background: #f4f4f4;
+}
+
+.wishlistIconContainer {
+    height: 100%;
+}

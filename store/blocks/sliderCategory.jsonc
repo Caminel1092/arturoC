@@ -5,8 +5,8 @@
             "height": 720,
             "images": [
                 {
-                    "image": "/assets/bannercategory.jpg",
-                    "mobileImage": "/assets/bannercategory.jpg"
+                    "image": "https://callearturop.vteximg.com.br/arquivos/bannercategory.jpg",
+                    "mobileImage": "https://callearturop.vteximg.com.br/arquivos/bannercategory.jpg"
                 }
                
             ]

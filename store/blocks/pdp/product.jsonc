@@ -3,13 +3,14 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "tab-layout#product",
-      "flex-layout.row#description",
-      "flex-layout.row#specifications-title",
-      "product-specification-group#table",
-      "shelf.relatedProducts",
-      "product-reviews",
-      "product-questions-and-answers"
+      //"tab-layout#product",
+      //"flex-layout.row#description",
+      //"flex-layout.row#specifications-title",
+      //"product-specification-group#table",
+      "shelf.relatedProducts#accesorios",
+      "shelf.relatedProducts#view"
+      //"product-reviews",
+      //"product-questions-and-answers"
     ]
   },
   "flex-layout.row#specifications-title": {
@@ -57,7 +58,8 @@
       "marginTop": 4,
       "marginBottom": 7,
       "paddingTop": 7,
-      "paddingBottom": 7
+      "paddingBottom": 7,
+      "blockClass": "contenedorP"
     },
     "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
   },
@@ -83,9 +85,9 @@
   },
 
   "flex-layout.col#stack": {
-    "children": ["stack-layout"],
+    "children": ["stack-layout", "tab-layout#product"],
     "props": {
-      "width": "60%",
+      "width": "65%",
       "rowGap": 0
     }
   },
@@ -128,9 +130,10 @@
       "product-gifts",
       "product-availability",
       "flex-layout.row#buy-button",
-      "availability-subscriber",
-      "shipping-simulator",
-      "share#default"
+      "flex-layout.row#imagenc"
+      //"availability-subscriber"
+      //"shipping-simulator",
+      //"share#default"
     ]
   },
   "product-quantity#quanty":{
@@ -142,7 +145,7 @@
   "product-availability": {
     "props": {
       "threshold": "1001",
-      "lowStockMessage": "Only {quantity} left!",
+      "lowStockMessage": "! QUEDAN {quantity} DISPONIBLES !",
       "highStockMessage": "Item in stock!"
     }
   },
@@ -167,12 +170,44 @@
       "marginTop": 4,
       "marginBottom": 7
     },
-    "children": ["add-to-cart-button"]
+    "children": ["flex-layout.col#buy-bottom", "flex-layout.col#whishlist"]
   },
-  "add-to-cart-button":{
+  "flex-layout.col#buy-bottom":{
+    "children":[
+      "add-to-cart-button#product"    
+    ],
+    "props":{
+      "blockClass": "botoncomp",
+      "width": "80%"
+    }
+  },
+  "flex-layout.col#whishlist":{
+    "children":[
+      "add-to-list-btn"   
+    ],
+    "props":{
+      "blockClass": "botonwhish"
+    }
+  },
+
+  "add-to-cart-button#product":{
     "props":{
       "text":"Comprar ahora"
     }
+  },
+  "flex-layout.row#imagenc":{
+    "children":[
+      "image#pagosM"
+    ],
+    "props":{
+      "blockClass":"imageCP"
+    }
+  },
+  "image#pagosM":{
+    "props": {
+      "src": "https://callearturop.vteximg.com.br/arquivos/logos%20inferiores.png",
+      "blockClass":"imageinfep"
+    }    
   },
 
   "flex-layout.row#product-availability": {
@@ -234,7 +269,7 @@
     "tab-list.item#product1": {
       "props": {
         "tabId": "product1",
-        "label": "Visión del conjunto",
+        "label": "Descripción",
         "blockClass": "tab--left"
       }
     },
@@ -273,7 +308,7 @@
       }
     },
     "flex-layout.row#product1": {
-      "children": ["flex-layout.col#productEsepecificacion"],
+      "children": ["product-description"],
       "props": {
         "tabId": "product1",
         "blockClass": "InformacionDos"
@@ -287,7 +322,7 @@
       }
     },
     "product-specification-group#tap1": {
-      "children": ["product-specification-text#group", "product-specification"],
+      "children": ["product-description"],
       "props": {
         "blockClass": "producttap1",
         "zoomFactor": "1"
@@ -320,7 +355,7 @@
   
     //Contenido del segundo tabber
     "tab-content.item#product2": {
-      "children": ["flex-layout.row#product2"],
+      "children": ["product-description"],
       "props": {
         "tabId": "product2"
       }
@@ -370,7 +405,7 @@
     },
     //Contenido del ultimo tabber
     "tab-content.item#product5": {
-      "children": ["flex-layout.row#product5"],
+      "children": ["product-description"],
       "props": {
         "tabId": "product5"
       }
@@ -428,5 +463,29 @@
         "Pinterest": true
       }
     }
+  },
+  "shelf.relatedProducts#accesorios": {
+    "props": {
+        "recommendation": "accessories",
+        "blockClass":"vitrineP",
+        "showPaginationDots":"never",
+        "productList": {
+            "titleText": "Podemos sugerir",
+            "itemsPerPage": 4
+        }
+    },
+    "blocks": ["product-summary.shelf"]
+  },
+  "shelf.relatedProducts#view": {
+    "props": {
+        "recommendation": "view",
+        "blockClass":"vitrineP",
+        "showPaginationDots":"never",
+        "productList": {
+            "titleText": "También compraron",
+            "itemsPerPage": 4
+        }
+    },
+    "blocks": ["product-summary.shelf"]
   }
 }

@@ -182,7 +182,7 @@
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   width: 100%;
-  margin-top: 1.2rem;
+  margin-top: 0;
   z-index: 9;
 }
 .flexCol--lateralCol {
@@ -191,4 +191,74 @@
 .flexCol--filtroContent {
   width: 30%;
   background: white;
+}
+/*Category styles*/
+
+.flexRow--breadcrumbC {
+  padding-top: 15px;
+  border-top: 2px solid #f3f1f1;
+  margin: 30px 2% 0 2%;
+}
+.flexRow--tituloCat {
+  margin: 0 2% 0 2%;
+}
+.flexRow--rowSearchInfo {
+  margin: 0 2% 0 2%;
+}
+.flexRowContent--rowSearchInfo {
+  align-items: center;
+  display: flex;
+  padding-top: 20px;
+}
+
+.flexRowContent--tituloCat {
+  display: flex;
+  align-items: center;
+}
+
+.flexRow--orderByAndSwitcher {
+    padding: 0;
+}
+.flexRow--row-vitrine-category {
+  margin: 0 2%;
+}
+.flexRowContent--imageCP {
+  border-top: 1px solid #e3e1e1;
+  padding-right: 10%;
+  padding-top: 7%;
+}
+.flexRowContent--contenedorP {margin-top: 0;padding-top: 1.4%;}
+
+.flexRow--preciosC {
+  border-bottom: 2px solid #e3e1e1;
+  padding-bottom: 5px;
+}
+.flexRow{
+  background: #fafafa;
+}
+.flexRow--menu-rowC{
+  background: transparent;
+}
+.flexColChild--botoncomp :global(.vtex-button):hover {
+  background: #DADADA;
+  color: #181E2A;
+}
+.flexColChild--botoncomp :global(.vtex-button__label){
+  padding: 0 !important;
+  margin: 0;
+}
+.flexColChild--buycolection :global(.vtex-button){
+  background: transparent;
+  border: none;
+}
+/*vitrinas*/
+.flexCol--buycolection {
+  display: flex;
+  justify-content: end;
+  margin-left: 13%;
+}
+.flexColChild--precios {
+  display: flex;
+  align-items: end;
+  margin-bottom: 5%;
 }

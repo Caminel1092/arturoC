@@ -1,4 +1,7 @@
 {
+  //Estructura princpal home 
+  //
+  
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",

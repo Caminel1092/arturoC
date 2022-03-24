@@ -333,6 +333,7 @@ input#downshift-1-input {
   width: 30%;
   margin: 0 auto;
   margin-top: -20px;
+  height: 90px;
 }
 .swiperPaginationClickable{
   display: none;
@@ -340,49 +341,158 @@ input#downshift-1-input {
 /*Colors*/
 .skuSelectorItem--rosa-lavanda {
   background: #9b90b5;
+  border-radius: 7px;
 }
 .skuSelectorItem--azul-marino {
   background: #08356d;
+  border-radius: 7px;
 }
 .skuSelectorItem--azul-royal {
   background: #052446;
+  border-radius: 7px;
 }
 .skuSelectorItem--naranja-claro {
   background: #fea827;
+  border-radius: 7px;
+}
+.skuSelectorItem--morado  {
+  background: #8d2074;
+  border-radius: 7px;
+}
+.skuSelectorItem--negro  {
+  background: black;
+  border-radius: 7px;
+}
+.skuSelectorItem--verde-manzana {
+  background: #b7df53;
+  border-radius: 7px;
+}
+.skuSelectorItem--esmeralda {
+  background: #017d30;
+  border-radius: 7px;
+}
+.skuSelectorItem--naranja-claro {
+  background: #fea827;
+  border-radius: 7px;
 }
 
-.skuSelectorSubcontainer--colores .skuSelectorName::before {
+.skuSelectorContainer--selector .skuSelectorSubcontainer--colores .skuSelectorName::before {
   content:"Color disponible";
   font-size: .875rem;
   text-transform: uppercase;
 }
-.skuSelectorSubcontainer--colores .skuSelectorName {
+.skuSelectorContainer--selector .skuSelectorSubcontainer--colores .skuSelectorName {
   font-size: 0;
 }
-.skuSelectorSubcontainer--talla .skuSelectorName {
+.skuSelectorContainer--selector .skuSelectorSubcontainer--talla .skuSelectorName {
   text-transform: uppercase;
 }
 
 
-.skuSelectorSubcontainer--colores .skuSelectorItemTextValue {
+.skuSelectorContainer--selector .skuSelectorSubcontainer--colores .skuSelectorItemTextValue {
   font-size: 0;
 }
 .frameAround{
   display: none;
 }
-.skuSelectorItem--selected{
+.skuSelectorContainer--selector .skuSelectorItem--selected{
   border: 2px solid;
   border-radius: 5px;
 }
-.skuSelectorInternalBox{
+.skuSelectorContainer--selector .skuSelectorInternalBox{
   border: 1px solid #afafaf59;
 }
-.flex.flex-column.vtex-store-components-3-x-skuSelectorSubcontainer--colores.mb3.vtex-store-components-3-x-skuSelectorSubcontainer {
-  border-bottom: 1px solid #dcdcdc8a;
+.skuSelectorContainer--selector .skuSelectorSubcontainer--colores {
+  border-bottom: 2px solid #e3e1e1;
   padding-bottom: 15px;
 }
 
-.flex.flex-column.vtex-store-components-3-x-skuSelectorSubcontainer--talla.mb3.vtex-store-components-3-x-skuSelectorSubcontainer {
-  border-bottom: 1px solid #dcdcdc8a;
+.skuSelectorContainer--selector .skuSelectorSubcontainer--talla {
+  border-bottom: 2px solid #e3e1e1;
   padding-bottom: 15px;
+  padding-top: 18px;
 }
+.container{
+  padding: 0px;
+}
+.skuSelectorOptionsList {
+  margin: 0;
+}
+/*Contenido*/
+.contentContainer {
+  width: 80%;
+  margin: 0 auto;
+  height: 300px;
+  border: 1px solid #d9d9d9;
+}
+
+.content {
+  font-size: 1rem;
+  padding: 0 4%;
+  font-weight: 100;
+}
+
+.productDescriptionTitle {
+  padding: 20px 4% 0 4%;
+  font-size: 1rem;
+}
+/*Colores vitrinas*/
+.skuSelectorSubcontainer--colores .skuSelectorItemTextValue{
+  font-size: 0 !important;
+}
+
+.skuSelectorSubcontainer--colores .skuSelectorItem--selected {
+  border: 1px solid black;
+  border-radius: 7px;
+}
+.skuSelectorName {
+  display: none;
+}
+
+.skuSelectorContainer--selector .skuSelectorName{
+  display: block;
+}
+.skuSelectorSubcontainer {
+  margin-bottom: 0;
+}
+.skuSelectorSubcontainer--colores .skuSelectorItem{
+  width: 24px;
+  height: 24px;
+}
+.skuSelectorContainer--selector .skuSelectorSubcontainer--colores .skuSelectorItem{
+  width: initial;
+  height: 36px;
+}
+.skuSelectorTextContainer {
+  display: none;
+}
+.skuSelectorContainer--selector .skuSelectorTextContainer {
+  display: block;
+}
+.skuSelectorContainer--selector .skuSelectorSubcontainer--talla {
+  display: flex !important;
+}
+.skuSelectorContainer--selector .skuSelectorSubcontainer--talla {
+  opacity: initial;
+  visibility: initial;
+  transition: 1s;
+  position: initial;
+  top: 0;
+}
+.skuSelectorSubcontainer--talla {
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  position: absolute;
+  top: -20px;
+}
+.skuSelectorContainer{
+  transition: 1s;
+}
+.skuSelectorContainer:hover .skuSelectorSubcontainer--talla{
+  display: flex;
+  top: 0;
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+} 

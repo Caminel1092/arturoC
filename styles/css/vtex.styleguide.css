@@ -9,3 +9,12 @@
 .hideDecorators.noAppearance {
   order: 2;
 }
+/*Product*/
+.dropdown {
+  border-color: black;
+}
+
+.container {
+  border-color: black;
+  color: black;
+}

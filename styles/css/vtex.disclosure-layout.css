@@ -19,7 +19,6 @@
     margin: 0 auto;
 }
 .trigger--fitroTrigger{
-    width: 24% !important;
     background: transparent;
     border-radius: 10px;
     border: 1px solid;
@@ -29,7 +28,6 @@
 .content--filtroContent--visible{
     position: fixed;
     top: 0px;
-    padding: 76px 0 0 100px;
     z-index: 99999;
     height: 100%;
     left: 0px;
@@ -54,4 +52,7 @@
     top: 10px;
     right: 20px;
     cursor: pointer;
+}
+.trigger--fitroTrigger {
+    padding: 0;
 }

@@ -228,3 +228,25 @@
   letter-spacing: 1px;
   line-height: 14px;
 }
+
+/*Category*/
+.paragraph--tituloFiltro {
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  margin: 0;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 6px 25px 6px 38px;
+}
+
+.paragraph--tituloFiltro::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(https://callearturop.vteximg.com.br/arquivos/filtro%20image.png) no-repeat;
+  position: absolute;
+  background-size: 100%;
+  left: 4%;
+  top: 29%;
+}
